@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora | Nataly Rivera</title>
+  <link rel="stylesheet" href="estilo.css">
+  <style>
+    #pantalla { text-align:right; font-size:1.8rem; background:var(--vino-100); }
+    .teclas { display:grid; grid-template-columns:repeat(4,1fr); gap:8px; }
+    .teclas button { padding:14px 0; font-size:1.2rem; background:var(--vino-100); color:var(--vino-900); }
+    .teclas button:hover { background:var(--vino-300); }
+    .teclas .op { background:var(--vino-700); color:#fff; }
+    .teclas .op:hover { background:var(--vino-900); }
+  </style>
+</head>
+<body>
+  <div class="caja">
+    <h1>Calculadora</h1>
+    <input type="text" id="pantalla" value="0" readonly>
+    <div class="teclas">
+      <button class="op" data-t="C">C</button><button class="op" data-t="←">←</button><button class="op" data-t="/">÷</button><button class="op" data-t="*">×</button>
+      <button data-t="7">7</button><button data-t="8">8</button><button data-t="9">9</button><button class="op" data-t="-">−</button>
+      <button data-t="4">4</button><button data-t="5">5</button><button data-t="6">6</button><button class="op" data-t="+">+</button>
+      <button data-t="1">1</button><button data-t="2">2</button><button data-t="3">3</button><button class="op" data-t="=">=</button>
+      <button data-t="0">0</button><button data-t=".">.</button>
+    </div>
+    <a class="volver" href="../../Proyectos.html">← Volver al portafolio</a>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

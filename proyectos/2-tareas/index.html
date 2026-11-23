@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lista de tareas | Nataly Rivera</title>
+  <link rel="stylesheet" href="estilo.css">
+  <style>
+    .fila { display:flex; gap:8px; }
+    .fila input { margin:0; }
+    ul { list-style:none; padding:0; margin:16px 0 0; }
+    li { display:flex; justify-content:space-between; align-items:center; padding:10px 12px; margin-bottom:8px; background:var(--vino-50); border-left:4px solid var(--vino-500); border-radius:6px; cursor:pointer; }
+    li.hecha span { text-decoration:line-through; color:var(--vino-500); }
+    li button { background:none; color:var(--vino-700); padding:0 6px; font-size:1.3rem; }
+    li button:hover { background:none; color:var(--vino-950); }
+    .nota { font-size:.85rem; color:var(--vino-500); text-align:center; }
+  </style>
+</head>
+<body>
+  <div class="caja">
+    <h1>Lista de tareas</h1>
+    <div class="fila">
+      <input type="text" id="nueva" placeholder="Escribe una tarea" maxlength="40">
+      <button id="agregar">Agregar</button>
+    </div>
+    <ul id="lista"></ul>
+    <p class="nota">Toca una tarea para marcarla como hecha.</p>
+    <a class="volver" href="../../Proyectos.html">← Volver al portafolio</a>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

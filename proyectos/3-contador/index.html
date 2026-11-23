@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contador | Nataly Rivera</title>
+  <link rel="stylesheet" href="estilo.css">
+  <style>
+    #numero { font-size:5rem; font-weight:700; text-align:center; color:var(--vino-700); margin:10px 0 20px; }
+    .botones { display:flex; gap:10px; justify-content:center; }
+    .botones button { font-size:1.4rem; min-width:56px; }
+    #reiniciar { background:var(--vino-300); color:var(--vino-950); }
+  </style>
+</head>
+<body>
+  <div class="caja">
+    <h1>Contador</h1>
+    <div id="numero">0</div>
+    <div class="botones">
+      <button id="menos" aria-label="Restar">−</button>
+      <button id="reiniciar">Reiniciar</button>
+      <button id="mas" aria-label="Sumar">+</button>
+    </div>
+    <a class="volver" href="../../Proyectos.html">← Volver al portafolio</a>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto | Nataly Rivera</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600&family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="CSS/estilos.css">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg nav-vino navbar-dark fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="index.html"><img id="logo" src="CSS/logo.png" alt="Logo de Nataly Rivera"><span>Nataly Rivera</span></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-label="Abrir menú">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse d-lg-flex justify-content-lg-end" id="menu">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+        <li class="nav-item"><a class="nav-link" href="nosotros.html">Sobre mí</a></li>
+        <li class="nav-item"><a class="nav-link" href="Proyectos.html">Proyectos</a></li>
+        <li class="nav-item"><a class="nav-link" href="testimonios.html">Testimonios</a></li>
+        <li class="nav-item"><a class="nav-link active" href="contactos.html">Contacto</a></li>
+        <li class="nav-item"><a class="nav-link" href="login.html">Login</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<section class="mapa">
+  <iframe title="Mapa de Av. Cascanueces 2221, Santa Anita" src="https://www.google.com/maps?q=Av.+Cascanueces+2221,+Santa+Anita,+Lima&amp;output=embed" width="100%" height="350" style="border:0" allowfullscreen loading="lazy"></iframe>
+</section>
+
+<main class="seccion fondo-claro">
+  <div class="container">
+    <div class="row g-5">
+      <div class="col-lg-5">
+        <h2 class="titulo-seccion">Hablemos</h2>
+        <p class="lead-vino">Escríbeme por el formulario o encuéntrame en mis redes.</p>
+        <ul class="datos-contacto">
+          <li><i class="bi bi-geo-alt-fill"></i><div><small>Dirección</small>Av. Cascanueces 2221, Santa Anita</div></li>
+          <li><i class="bi bi-instagram"></i><div><small>Instagram</small><a href="https://www.instagram.com/nxxtg_r/" target="_blank" rel="noopener">@nxxtg_r</a></div></li>
+          <li><i class="bi bi-facebook"></i><div><small>Facebook</small><a href="https://www.facebook.com/search/top?q=Nataly%20Rivera" target="_blank" rel="noopener">Nataly Rivera</a></div></li>
+        </ul>
+      </div>
+      <div class="col-lg-7">
+        <div class="card card-vino">
+          <div class="card-body p-4">
+            <h3 class="mb-3">Envíame un mensaje</h3>
+            <form action="https://formspree.io/f/xzerkjzw" method="POST">
+              <input type="text" name="_gotcha" style="display:none;">
+
+              <label for="nombres" class="mb-1">Apellidos y nombres</label>
+              <input type="text" id="nombres" name="nombres" class="form-control" placeholder="Ingresa tus nombres" maxlength="60" required>
+
+              <label for="direccion" class="mb-1 mt-3">Dirección</label>
+              <input type="text" id="direccion" name="direccion" class="form-control" placeholder="Ingresa tu dirección" maxlength="60" required>
+
+              <label for="correo" class="mb-1 mt-3">Correo</label>
+              <input type="email" id="correo" name="email" class="form-control" placeholder="Ingresa tu correo" maxlength="60" required>
+
+              <label for="comentarios" class="mb-1 mt-3">Comentarios</label>
+              <textarea id="comentarios" name="message" class="form-control" rows="4" maxlength="500" placeholder="Escribe tu comentario" required></textarea>
+
+              <button type="submit" class="btn btn-vino w-100 mt-4">Enviar mensaje</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+<section class="redes">
+  <div class="container">
+    <h3>Sígueme en mis redes</h3>
+    <a class="red" href="https://www.instagram.com/nxxtg_r/" target="_blank" rel="noopener"><i class="bi bi-instagram"></i> @nxxtg_r</a>
+    <a class="red" href="https://www.facebook.com/search/top?q=Nataly%20Rivera" target="_blank" rel="noopener"><i class="bi bi-facebook"></i> Nataly Rivera</a>
+  </div>
+</section>
+
+<footer class="pie">
+  <div class="container">
+    <p>Todos los derechos reservados &copy; 2026 &middot; Nataly Rivera</p>
+  </div>
+</footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="JS/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+/* ----- Encabezado de página (Testimonios) ----- */
+.encabezado-pagina { background: var(--vino-800); color: #fff; padding: 3.5rem 0; }
+.encabezado-pagina h1 { font-size: clamp(2rem, 5vw, 3rem); color: #fff; margin-bottom: .4rem; }
+.encabezado-pagina p { color: var(--vino-100); font-size: 1.15rem; margin: 0; }
+
+/* ----- Testimonios ----- */
+.testimonio { border-left: 4px solid var(--vino-500); padding: .5rem 0 .5rem 1.25rem; height: 100%; }
+.testimonio blockquote {
+  font-family: "Fraunces", Georgia, serif;
+  font-size: 1.1rem;
+  color: var(--vino-900);
+  margin: 0 0 1rem;
+}
+.testimonio .autor { display: flex; align-items: center; gap: .75rem; }
+.testimonio small { display: block; color: var(--vino-700); }
+.avatar {
+  width: 64px; height: 64px; border-radius: 50%;
+  object-fit: cover;               /* recorta sin deformar la foto */
+  border: 3px solid var(--vino-300);
+}
+.av-1 { background: var(--vino-900); }
+.av-2 { background: var(--vino-700); }
+.av-3 { background: var(--vino-500); }

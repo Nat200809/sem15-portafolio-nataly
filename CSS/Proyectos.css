@@ -1,0 +1,51 @@
+/* Galería con flexbox: 4 por fila en PC, 2 en tablet, 1 en celular */
+.Proyectos {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+}
+.Proyectos figure { width: calc(25% - 18px); margin: 0; text-align: center; }
+.Proyectos img {
+  width: 100%;
+  cursor: pointer;
+  border-radius: 12px;
+  border: 3px solid transparent;
+  transition: border-color .2s, transform .2s;
+}
+.Proyectos img:hover { border-color: #b5516f; transform: translateY(-4px); }
+.Proyectos figcaption { display: flex; flex-direction: column; align-items: center; gap: 8px; margin-top: 10px; color: #4a0e1f; }
+
+/* Modal (lightbox) */
+.modelo {
+  position: fixed;
+  z-index: 2000;
+  background: rgba(43, 8, 19, 0.88);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.modelo img {
+  width: min(1000px, 92vw);
+  max-height: 88vh;
+  object-fit: contain;
+  display: block;
+  margin: auto;
+  border-radius: 14px;
+}
+.cerrar { color: #fff; font-size: 40px; position: absolute; top: 10px; right: 15px; cursor: pointer; }
+
+/* Media queries */
+@media only screen and (max-width: 980px) {
+  .Proyectos figure { width: calc(50% - 12px); }
+}
+@media only screen and (max-width: 480px) {
+  .Proyectos { width: 100%; }
+  .Proyectos figure { width: 100%; }
+}
